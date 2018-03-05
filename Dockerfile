@@ -23,4 +23,13 @@ RUN curl \
 		> /tmp/pure_installer.fish
 RUN source /tmp/pure_installer.fish; and install_pure
 
-ENTRYPOINT ["fish"]
+RUN curl \
+        --location \
+        --output $HOME/.config/fish/functions/fisher.fish \
+        --create-dirs \
+    git.io/fisherman
+RUN fisher fishtape .
+
+WORKDIR /home/nemo/.config/fish/functions/theme-pure/
+ENTRYPOINT ["fish", "-c"]
+CMD ["fish"]
