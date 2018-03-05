@@ -1,5 +1,5 @@
 
-> Docker to run the [`fish` port of `pure`](https://github.com/rafaelrinaldi/pure) prompt.
+> Docker to run the [`fish` port of `pure`](https://github.com/rafaelrinaldi/pure) prompt in a clean environment.
 
 ### Usage
 
