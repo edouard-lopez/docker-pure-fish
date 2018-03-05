@@ -14,11 +14,13 @@ RUN  echo 'nemo ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 USER nemo
 WORKDIR /home/nemo
 
+SHELL ["fish", "-c"]
+
 RUN curl \
         --location \
         --silent \
         https://raw.github.com/rafaelrinaldi/pure/master/installer.fish \
 		> /tmp/pure_installer.fish
-RUN fish -c 'source /tmp/pure_installer.fish; and install_pure'
+RUN source /tmp/pure_installer.fish; and install_pure
 
 ENTRYPOINT ["fish"]
