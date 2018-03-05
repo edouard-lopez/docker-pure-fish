@@ -13,4 +13,4 @@
 
 **Run tests**
 
-    docker run --name test -it pure-fish 'fishtape tests/*.test.fish'
+    docker run --name test -t pure-fish 'fishtape tests/*.test.fish'
