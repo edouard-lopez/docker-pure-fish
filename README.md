@@ -5,7 +5,7 @@
 
 **Fetch**
 
-    docker pull edouard-lopez/pure-fish
+    docker pull edouardlopez/pure-fish
 
 **Run** ([`pure`](https://github.com/rafaelrinaldi/pure) latest version)
 
