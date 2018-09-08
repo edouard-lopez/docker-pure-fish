@@ -9,8 +9,8 @@
 
 **Run** ([`pure`](https://github.com/rafaelrinaldi/pure) latest version)
 
-    docker run --name pure -it edouardlopez/pure-fish
+    docker run --name pure --interactive --tty edouardlopez/pure-fish
 
 **Run tests**
 
-    docker run --name test -t edouardlopez/pure-fish 'fishtape tests/*.test.fish'
+    docker run --name test --tty edouardlopez/pure-fish 'fishtape tests/*.test.fish'
