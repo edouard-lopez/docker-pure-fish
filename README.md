@@ -1,5 +1,4 @@
-
-> Docker to run the [`fish` port of `pure`](https://github.com/rafaelrinaldi/pure) prompt in a clean environment.
+> Docker to run the [`fish` port of `pure`](https://github.com/rafaelrinaldi/pure) prompt in a clean environment. It is used to run installer script with various packages manager.
 
 ### Usage
 
