@@ -17,10 +17,10 @@ WORKDIR /home/nemo
 SHELL ["fish", "-c"]
 
 RUN curl \
+    git.io/pure-fish \
+    --output /tmp/pure_installer.fish \
     --location \
-    --silent \
-    https://raw.github.com/rafaelrinaldi/pure/master/installer.fish \
-    > /tmp/pure_installer.fish
+    --silent
 RUN source /tmp/pure_installer.fish; and install_pure
 
 RUN curl \
